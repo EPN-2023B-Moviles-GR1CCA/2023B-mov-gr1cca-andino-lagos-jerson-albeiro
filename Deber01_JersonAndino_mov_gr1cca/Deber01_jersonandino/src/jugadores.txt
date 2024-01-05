@@ -1,0 +1,4 @@
+jugador,1,1,random1,random1,1,false
+jugador,2,1,random2,random2,2,false
+jugador,3,2,random3,random3,3,false
+jugador,4,3,random4,random4,4,false

@@ -1,0 +1,3 @@
+equipo,2,nombre2,2000,A,X
+equipo,3,nombre3,2000,A,X
+equipo,4,nombre4,2000,A,X
