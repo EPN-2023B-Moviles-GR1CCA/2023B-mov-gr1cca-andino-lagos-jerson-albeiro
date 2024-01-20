@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gr1accjaal2023B</string>
+    <string name="texto_saludo">LAND-ES</string>
+    <color name="color_fondo">#FF55A819</color>
+    <color name="color_texto">#FFFF0000</color>
+</resources>

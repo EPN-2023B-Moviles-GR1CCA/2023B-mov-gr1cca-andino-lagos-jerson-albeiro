@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401948526532",
+    "project_id": "b2023-gr1acc-jaal",
+    "storage_bucket": "b2023-gr1acc-jaal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401948526532:android:92eec652e240d9bdde4691",
+        "android_client_info": {
+          "package_name": "com.example.gr1accjaal2023b"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiDjfKOt0x-De5RXT_JyPtSlWwcU099mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
