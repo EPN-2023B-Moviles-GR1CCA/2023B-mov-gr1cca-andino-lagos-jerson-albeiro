@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_form_jugador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioJugador">
+
+    <TextView
+        android:id="@+id/tv_title_jugador"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:autoText="false"
+        android:background="#61E892"
+        android:lineSpacingExtra="14sp"
+        android:text="EDITAR JUGADOR"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="EDITAR JUGADOR" />
+
+    <Button
+        android:id="@+id/btn_guardar_jugador"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="GUARDAR"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_jugador"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_jugador" />
+
+    <EditText
+        android:id="@+id/et_id_equipo_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="ID Equipo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/et_id_jugador"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_id_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/et_id_jugador" />
+
+    <EditText
+        android:id="@+id/et_nombre_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/et_id_equipo_jugador"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_id_equipo_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/et_id_equipo_jugador" />
+
+    <EditText
+        android:id="@+id/et_nacionalidad_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nacionalidad"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/et_nombre_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_nombre_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_jugador" />
+
+    <EditText
+        android:id="@+id/et_numero_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_nacionalidad_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_nacionalidad_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/et_nacionalidad_jugador" />
+
+    <Switch
+        android:id="@+id/sw_titular_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="Titular"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_numero_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_numero_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/et_numero_jugador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
