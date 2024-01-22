@@ -57,7 +57,7 @@ class FormularioEquipo : AppCompatActivity() {
         val id = ptID.text.toString().toInt()
         val nombre=ptNombre.text.toString()
         val anio = ptAnio.text.toString().toInt()
-        val division = ptDivision.toString().toCharArray()[0]
+        val division = ptDivision.toString().lowercase().toCharArray()[0]
         val director = ptDirector.toString()
 
         var result=false;
