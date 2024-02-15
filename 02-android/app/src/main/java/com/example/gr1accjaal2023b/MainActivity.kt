@@ -61,6 +61,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
+
         val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida)
         botonCicloVida
             .setOnClickListener{
@@ -91,6 +94,21 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irActividad(ECrudEntrenador::class.java)
             }
+
+        val botonFReciclerView = findViewById<Button>(R.id.btn_recicler_view)
+        botonFReciclerView.setOnClickListener {
+            irActividad(FReciclerView::class.java)
+        }
+
+        val botonMaps = findViewById<Button>(R.id.btn_gmaps)
+        botonMaps.setOnClickListener {
+            irActividad(GGoogleMapsActivity::class.java)
+        }
+
+        val botonFAuth = findViewById<Button>(R.id.btn_intent_firebase)
+        botonFAuth.setOnClickListener {
+            irActividad(HFirebaseUIAuth::class.java)
+        }
     }
     fun abrirActividadConParametros(clase: Class<*>){
         val intentExplicito = Intent(this, clase)
