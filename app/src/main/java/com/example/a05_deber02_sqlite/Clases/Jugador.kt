@@ -1,4 +1,4 @@
-package com.example.examen01_mov_gr1cca_jersonandino
+package com.example.a05_deber02_sqlite.Clases
 
 class Jugador(
     var id: Int, // Id del jugador

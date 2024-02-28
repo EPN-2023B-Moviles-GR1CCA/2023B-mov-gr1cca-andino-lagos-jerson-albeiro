@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_form_equipo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioEquipo">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:autoText="false"
+        android:background="#61E892"
+        android:lineSpacingExtra="14sp"
+        android:text="CREAR EQUIPO"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="CREAR EQUIPO" />
+
+    <EditText
+        android:id="@+id/pt_id_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/pt_nombre_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/pt_id_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_id_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/pt_id_equipo" />
+
+    <EditText
+        android:id="@+id/pt_anio_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Año Creacion"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/pt_nombre_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_nombre_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/pt_nombre_equipo" />
+
+    <EditText
+        android:id="@+id/pt_division_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Division"
+        android:inputType="text"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="@+id/pt_anio_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_anio_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/pt_anio_equipo" />
+
+    <EditText
+        android:id="@+id/pt_director_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Director Tecnico"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/pt_division_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_division_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/pt_division_equipo" />
+
+    <Button
+        android:id="@+id/btn_guardar_equipo"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Guardar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pt_director_equipo"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/pt_director_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/pt_director_equipo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

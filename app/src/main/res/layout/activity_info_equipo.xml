@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoEquipo">
+
+    <TextView
+        android:id="@+id/tv_title_info_equipo"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:autoText="false"
+        android:background="#61E892"
+        android:lineSpacingExtra="14sp"
+        android:text="DETALLES EQUIPO"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="DETALLES EQUIPO" />
+
+    <TextView
+        android:id="@+id/tv_nombre_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_equipo" />
+
+    <TextView
+        android:id="@+id/tv_director_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Director Tecnico:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombre_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombre_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_equipo" />
+
+    <TextView
+        android:id="@+id/tv_anio_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Año:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_director_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_director_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director_equipo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jugadores Registrados:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_anio_equipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_anio_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anio_equipo" />
+
+    <TextView
+        android:id="@+id/tv_division_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_anio_equipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/tv_anio_equipo"
+        app:layout_constraintTop_toTopOf="@+id/tv_anio_equipo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/lv_jugadores"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_info_equipo"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_info_equipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_info_equipo" />
+
+    <Button
+        android:id="@+id/btn_nuevo_jugador"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nuevo Jugador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
