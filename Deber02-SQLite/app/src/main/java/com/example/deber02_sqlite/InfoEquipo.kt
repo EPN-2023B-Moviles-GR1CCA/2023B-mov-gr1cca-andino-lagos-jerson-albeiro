@@ -50,17 +50,7 @@ class InfoEquipo : AppCompatActivity() {
         val position = intent.getIntExtra("position",0)
         val equipo=BaseDeDatos.tablaEquipo!!.consultarEquipoPorID(position)
 
-        val tvNombre = findViewById<TextView>(R.id.tv_nombre_equipo)
-        val tvAnio = findViewById<TextView>(R.id.tv_anio_equipo)
-        val tvDivision = findViewById<TextView>(R.id.tv_division_equipo)
-        val tvDirector = findViewById<TextView>(R.id.tv_director_equipo)
 
-        if(equipo != null){
-            tvNombre.text = "Nombre: ${equipo.nombre.toString()}"
-            tvDirector.text = "Director: ${equipo.directorTecnico.toString()}"
-            tvAnio.text = "Año: ${equipo.anioCreacion.toString()}"
-            tvDivision.text = "Division: ${equipo.division.toString()}"
-        }
 
         val lv_jugadores = findViewById<ListView>(R.id.lv_jugadores)
         actualizarListView()
